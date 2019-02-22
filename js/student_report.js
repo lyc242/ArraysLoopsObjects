@@ -9,13 +9,11 @@ var student;
 
 
 for (var i = 0;i < students.length; i+=1 ){
-    student = students[i].Name;
-    html += "<h2> Student: "+student+"</h2>";
-    for(key in students[i]) {
-        
-        html += key+": "+students[i][key]+"<br>";
-    }
-    html += "<br>";
+    student = students[i];
+    html += "<h2>Student: "+student.Name+"</h2>";
+    html += "<p>Track: " +student.Track+"</p>";
+    html += "<p>Achievements: "+student.Achievements+"</p>";
+    html += "<p>Points: "+student.Points+"</p>";
 }
 
 
